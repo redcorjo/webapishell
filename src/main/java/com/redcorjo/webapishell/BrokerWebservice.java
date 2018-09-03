@@ -5,9 +5,10 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 
 
-@Path("/test")
+@Path("v1")
 public class BrokerWebservice {
 
+    @Path("test")
     @GET
     @Produces("text/plain")
     public String Stringmyrequest(){
